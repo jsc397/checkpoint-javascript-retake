@@ -33,7 +33,7 @@ var peopleAges = people.map(getAge)
 // Type your solution immediately below this line:
 
 function getStudents (wdi) {
-  if (wdi.course == 'WDI') {
+  if (wdi.course === 'WDI') {
     return wdi.course
   } else {
     return false
