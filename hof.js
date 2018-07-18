@@ -21,9 +21,23 @@ var people = [
 // called `peopleAges`.
 // Type your solution immediately below this line:
 
+function getAge(person) {
+  return person.age
+}
 
+var peopleAges = people.map(getAge)
 
 // #2: Use the `filter` array method to create a new, filtered array containing only
 // persons from the `people` array who are WDI students. Assign the returned array
 // to a variable called `wdiStudents`.
 // Type your solution immediately below this line:
+
+function getStudents (wdi) {
+  if (wdi.course == 'WDI') {
+    return wdi.course
+  } else {
+    return false
+  }
+}
+
+var wdiStudents = people.filter(getStudents)
