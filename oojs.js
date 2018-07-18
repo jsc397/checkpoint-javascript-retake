@@ -6,7 +6,15 @@
 // - an `addMember` method that adds a person (string) to the `members` array
 // Type your solution immediately below this line:
 
-
+class Group {
+  constructor(name) {
+    this.name = name
+    this.members = []
+  }
+  addMember(person) {
+    this.members.push(person)
+  }
+}
 
 
 
@@ -14,6 +22,8 @@
 // Call the instance's `addMember` method to add a person to the instance's `members` array
 // Type your solution immediately below this line:
 
+var classmates = new Group ("Kelly")
+classmates.addMember("Timothy")
 
 
 
@@ -24,3 +34,4 @@ if(typeof Group !== 'undefined') {
     Group
   }
 }
+
