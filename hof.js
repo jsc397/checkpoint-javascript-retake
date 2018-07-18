@@ -21,8 +21,8 @@ var people = [
 // called `peopleAges`.
 // Type your solution immediately below this line:
 
-function getAge(person) {
-  return person.age
+function getAge(people) {
+  return people.age
 }
 
 var peopleAges = people.map(getAge)
